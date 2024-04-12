@@ -9,7 +9,7 @@ The first script captures images from a camera at regular intervals and saves th
 ### Description
 
 - The script iterates through camera indices 0 to 5, attempting to open each camera.
-- For each opened camera, it continuously captures frames and displays them.
+- For each opened camera, it continuously captures frames and saves them by default. Since I was using only a single camera by default, it works for me. However, in case you have multiple cameras conencted, please select the index for the camera you want to calibrate and only use that to capture the images.
 - Images are saved to the specified directory (`images` by default) every 5 seconds.
 
 ## Step 2: Perform Camera Calibration
