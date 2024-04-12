@@ -14,7 +14,7 @@ save_interval = 5  # Save image every 5 seconds
 last_save_time = time.time()
 
 # Specify the path tpo store captured images
-directory = "cali_result" # change this to "cali_result" in case test images needs to be captured
+directory = "images" # change this to "cali_result" in case test images needs to be captured
 Path(directory).mkdir(parents=True, exist_ok=True)
 
 for i in range(6):  # Try indices 0 to 5
@@ -38,7 +38,7 @@ for i in range(6):  # Try indices 0 to 5
 
         # Save image if save interval has elapsed
         if current_time - last_save_time >= save_interval:
-            cv2.imwrite('cali_result/img' + str(num) + '.png', img)
+            cv2.imwrite('images/img' + str(num) + '.png', img)
             print("Image saved as 'img" + str(num) + ".png'")
             num += 1
             last_save_time = current_time
