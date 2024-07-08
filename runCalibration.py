@@ -12,7 +12,7 @@ from pathlib import Path
 ################ FIND CHESSBOARD CORNERS - OBJECT POINTS AND IMAGE POINTS #############################
 
 # Change the chessboard size as per the size of your chessboard pattern
-chessboardSize = (10,7)
+chessboardSize = (9,9)
 frameSize = (640,480)
 
 # termination criteria
